@@ -1,0 +1,110 @@
+.star-bugs-container {
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 10px;
+  header {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+
+    .brand-logo {
+      margin-left: 20px;
+      & > img {
+        object-fit: contain;
+        width: 60px;
+      }
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      li {
+        margin-right: 52px;
+        a {
+          color: #333;
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .col-1 {
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        text-align: left;
+        .brand-name {
+          color: green;
+          font-size: 3.5rem;
+          font-weight: 800;
+        }
+      }
+      p {
+        max-width: 500px;
+        font-size: 1.2rem;
+        color: #333;
+        margin-top: 20px;
+        text-align: left;
+      }
+      .learn-btn {
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        background-color: green;
+        color: #fff;
+        font-weight: 500;
+        word-spacing: 2px;
+        font-size: 1rem;
+      }
+    }
+    .col-2 {
+      .img-buck {
+        margin-top: 50px;
+      }
+      .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        clip-path: circle(43.7% at 94% 100%);
+        z-index: -1;
+      }
+      .img-buck {
+        & > img {
+          width: 350px;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .thumbs {
+      list-style-type: none;
+      display: flex;
+      li {
+        margin-right: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        &:hover {
+          transform: scale(1.2);
+        }
+        & > img {
+          height: 80px;
+        }
+      }
+    }
+  }
+}
